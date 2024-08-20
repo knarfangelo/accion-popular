@@ -1,0 +1,35 @@
+header{
+  background: #E31F27;
+  height: 300px;
+  color: #fff;
+  display: flex;
+  gap: 12%;
+  box-sizing: border-box;
+  padding: 0 50px;
+  align-items: center;
+  justify-content: center;
+}
+h1,p,h3{
+  margin: 0;
+  padding: 0;
+}
+h3{
+  font-size: 23px;
+  font-weight: 700;
+}
+p{
+  font-weight: 400;
+}
+main{
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+a{
+  color: #fff;
+  text-decoration: none;
+  width: 70px;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}

@@ -1,0 +1,89 @@
+.navegacion-redes{
+  background: #000000;
+  margin: auto;
+  max-width: 1135px;
+  border-radius: 0px 0px 10px 10px;
+  height: 65px;
+  box-sizing: border-box;
+}
+ul, li{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  list-style: none;
+}
+.lista-redes{
+  box-sizing: border-box;
+  padding: 0 70px;
+}
+a{
+  text-decoration: none;
+  display: flex;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+ul{
+  display: flex;
+}
+li{
+  margin: 0 15px;
+}
+img{
+  width: 20px;
+  height: 20px;
+}
+
+.correo{
+  margin-left: auto;
+}
+.correo p{
+  margin-left: 10px;
+}
+/*
+navegacion-pagina
+*/
+.navegacion-paginas{
+  background: transparent;
+  margin: auto;
+  max-width: 1135px;
+  border-radius: 0px 0px 10px 10px;
+  height: 100px;
+  box-sizing: border-box;
+}
+.lista-paginas {
+  display: flex;
+  justify-content: space-between; /* Espacia uniformemente los <li> */
+  padding: 0;
+  margin: 0 10px;
+  list-style: none; /* Elimina los puntos de lista */
+}
+
+.lista-paginas li {
+  flex-grow: 1; /* Los <li> crecerán uniformemente */
+  align-items: center;
+  display: flex;
+  margin: 0;
+}
+
+.lista-paginas a {
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block; /* Hace que los <a> ocupen solo el espacio de su contenido */
+  width: auto;
+  height: auto;
+}
+
+.unete a{
+  background: #E31F27;
+  color: #fff;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  border-radius:15px;
+}
