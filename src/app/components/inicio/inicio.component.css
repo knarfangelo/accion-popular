@@ -1,5 +1,5 @@
 header{
-  height: 100vh;
+  height: auto;
   background: linear-gradient(180deg, #FFFFFF 0%, #E3E3E3 68.8%);
 }
 main{
@@ -12,12 +12,22 @@ main{
 }
 
 .portada{
-  width: 40%;
+  width: 35%;
+  max-width: 554px;
+  max-height: 300px;
+  object-fit: contain;
+  object-position: bottom right;
 }
 .foto{
-  width: 60%;
+  width: 45%;
+  max-width: 583px;
+  max-height: 500px;
+  object-fit: contain;
+  object-position: bottom left;
 }
 
 .portada{
   margin: auto;
+  margin-left: 0;
+  margin-right: 0;
 }

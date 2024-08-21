@@ -1,7 +1,8 @@
 .navegacion-redes{
   background: #000000;
   margin: auto;
-  max-width: 1135px;
+  width: 72%;
+  min-width: 750px;
   border-radius: 0px 0px 10px 10px;
   height: 65px;
   box-sizing: border-box;
@@ -47,8 +48,9 @@ navegacion-pagina
 */
 .navegacion-paginas{
   background: transparent;
+  min-width: 750px;
   margin: auto;
-  max-width: 1135px;
+  width: 72%;
   border-radius: 0px 0px 10px 10px;
   height: 100px;
   box-sizing: border-box;

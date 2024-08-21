@@ -6,11 +6,12 @@ main{
   grid-template-columns: minmax(0, 270px) minmax(0, 270px) minmax(0, 270px) minmax(0, 270px);
 }
 header{
-  margin-bottom: 150px;
+  padding-bottom: 150px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #E3E3E3 90%);
 }
 h1{
   text-align: center;
-  margin: 100px 0;
+  padding: 100px 0;
   font-weight: 900;
 }
 img{

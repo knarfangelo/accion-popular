@@ -1,3 +1,29 @@
-main{
-  background-color: red;
+/* nuesto-partido.component.css */
+swiper-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* Inicialmente, las diapositivas no visibles son completamente transparentes */
+  transition: opacity 0.5s ease; /* Ajusta el tiempo de la transición si es necesario */
+}
+
+.swiper-slide-active {
+  opacity: 1; /* La diapositiva activa es completamente opaca */
+}
+
+slide-custom {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  background: #000; /* Fondo negro para que el texto sea legible */
+  padding: 20px;
+  border-radius: 10px;
 }
