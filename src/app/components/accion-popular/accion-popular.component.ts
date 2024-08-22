@@ -5,6 +5,7 @@ import { PilaresComponent } from "../pilares/pilares.component";
 import { BancadaComponent } from "../bancada/bancada.component";
 import { NoticiasComponent } from "../noticias/noticias.component";
 import { NuestroPartidoComponent } from "../nuestro-partido/nuestro-partido.component";
+import { FooterComponent } from "../footer/footer.component";
 
 @Component({
   selector: 'app-accion-popular',
@@ -15,7 +16,8 @@ import { NuestroPartidoComponent } from "../nuestro-partido/nuestro-partido.comp
     PilaresComponent,
     BancadaComponent,
     NoticiasComponent,
-    NuestroPartidoComponent
+    NuestroPartidoComponent,
+    FooterComponent
 ],
   template: `
     <app-inicio></app-inicio>
@@ -23,6 +25,7 @@ import { NuestroPartidoComponent } from "../nuestro-partido/nuestro-partido.comp
     <app-bancada></app-bancada>
     <app-noticias></app-noticias>
     <app-nuestro-partido></app-nuestro-partido>
+    <app-footer></app-footer>
   `,
   styleUrl: './accion-popular.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

@@ -1,29 +1,112 @@
-/* nuesto-partido.component.css */
-swiper-container {
-  width: 100%;
-  height: 100%;
+.titulos{
+  margin: 0 35px;
+}
+button{
+  cursor: pointer;
+}
+
+.slide-custom{
   position: relative;
 }
 
-swiper-slide {
+.slide-info{
+  box-sizing: border-box;
+  padding: 0 25px;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: flex-end;
+  justify-content: space-evenly;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(227, 31, 38, 0.83);
+  top: 0;
+}
+
+.slide-button{
+display: flex;
+border: 0;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 16px;
+color: #fff;
+background: #BF161C;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+}
+.candidato{
+  height: 320px;
+  width: 450px;
+}
+.fondo-candidatos{
+  width: 100%;
+  object-fit: cover;
+  height: 560px;
+  display: flex;
+}
+.texto{
+  height: 160px;
+  width: 450px;
+  margin: 0;
+  display: flex;
+  margin-top: 40px;
+  position: relative;
+  background-color: rgba(115, 13, 16, 0.80);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+.texto p{
+  font-size: 16px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 50%;
+  margin-left: 40px;
+}
+.foto{
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  object-fit: contain;
+  object-position: left;
+  right: 0;
+  bottom: 0;
+  transform: scaleX(-1);
+}
+.description{
+  margin: 40px 0;
+  margin-right: 25px;
+}
+.slide-info h1{
+  font-size: 55px;
+  margin: 0;
+}
+
+/* button 12 */
+.buttons {
+  display: flex;
+  flex-wrap: wrap; /* Permitir que los botones se envuelvan */
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30px 35px;
+  padding-top: 0;
+  gap: 45px; /* Espacio entre los botones */
+}
+
+.button-nav {
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  opacity: 0; /* Inicialmente, las diapositivas no visibles son completamente transparentes */
-  transition: opacity 0.5s ease; /* Ajusta el tiempo de la transición si es necesario */
-}
-
-.swiper-slide-active {
-  opacity: 1; /* La diapositiva activa es completamente opaca */
-}
-
-slide-custom {
-  text-align: center;
-  color: #fff;
-  font-size: 18px;
-  background: #000; /* Fondo negro para que el texto sea legible */
-  padding: 20px;
+  padding: 10px 20px;
+  gap: 10px;
+  color: #BF161C;
+  background-color: #fff;
+  border: 1px solid #BF161C;
   border-radius: 10px;
+  flex: none;
+  flex-grow: 0;
 }
+

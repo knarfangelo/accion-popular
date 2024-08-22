@@ -5,6 +5,7 @@ export interface ICandidato {
     apellido: string,
     cargo: string,
     descripcion: string,
+    descripcion2: string,
     foto: string,
     propuestas: Array<string>
 }

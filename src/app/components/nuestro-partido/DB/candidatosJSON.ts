@@ -9,7 +9,8 @@ export const candidatosJSON:ICandidato[] = [
         cargo: "Presidente",
         descripcion: "Nacido en Callo el 22 de julio de 1981 es un político y abogado peruano.",
         foto: "/candidatos/foto.png",
-        propuestas: []
+        propuestas: [],
+        descripcion2: "Fue el alcalde distrital de San Martín de Porres para el periodo 2019-2022."
     },
     {
         id: 1,
@@ -18,7 +19,8 @@ export const candidatosJSON:ICandidato[] = [
         cargo: "Presidente",
         descripcion: "Nacido en Callo el 22 de julio de 1981 es un político y abogado peruano.",
         foto: "/candidatos/foto.png",
-        propuestas: []
+        propuestas: [],
+        descripcion2: "Fue el alcalde distrital de San Martín de Porres para el periodo 2019-2022."
     },
     {
         id: 2,
@@ -27,7 +29,8 @@ export const candidatosJSON:ICandidato[] = [
         cargo: "Presidente",
         descripcion: "Nacido en Callo el 22 de julio de 1981 es un político y abogado peruano.",
         foto: "/candidatos/foto.png",
-        propuestas: []
+        propuestas: [],
+        descripcion2: "Fue el alcalde distrital de San Martín de Porres para el periodo 2019-2022."
     },
     {
         id: 3,
@@ -36,7 +39,8 @@ export const candidatosJSON:ICandidato[] = [
         cargo: "Presidente",
         descripcion: "Nacido en Callo el 22 de julio de 1981 es un político y abogado peruano.",
         foto: "/candidatos/foto.png",
-        propuestas: []
+        propuestas: [],
+        descripcion2: "Fue el alcalde distrital de San Martín de Porres para el periodo 2019-2022."
     },
     {
         id: 4,
@@ -45,6 +49,7 @@ export const candidatosJSON:ICandidato[] = [
         cargo: "Presidente",
         descripcion: "Nacido en Callo el 22 de julio de 1981 es un político y abogado peruano.",
         foto: "/candidatos/foto.png",
-        propuestas: []
+        propuestas: [],
+        descripcion2: "Fue el alcalde distrital de San Martín de Porres para el periodo 2019-2022."
     },
 ]
