@@ -31,3 +31,13 @@ main{
   margin-left: 0;
   margin-right: 0;
 }
+@media (width < 800px) {
+  .portada{
+    display: none;
+  }
+  .foto{
+    width: 90%;
+    height: 250px;
+    object-position: center bottom;
+  }
+}

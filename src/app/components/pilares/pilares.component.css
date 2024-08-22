@@ -54,3 +54,24 @@ h1{
   grid-row: 1 / 3;
   text-align: center;
 }
+
+@media (max-width: 800px) {
+  main{
+    display: none;
+  }
+  .mySwiper {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  main .pilar {
+    display: none;
+  }
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 801px) {
+  .mySwiper {
+    display: none;
+  }
+}

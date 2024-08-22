@@ -24,12 +24,12 @@ register();
       <button class="button-nav" (click)="updateInfo(4)">Dirección Politica</button>
     </div>
     <main>
-    <swiper-container init=false>
+    <swiper-container init=false class="swiper-candidato">
       @for (candidato of candidatos; track $index) {
       <swiper-slide><div class="slide-custom">
         <img class="fondo-candidatos" src="candidatos/fondo-candidatos.webp" alt="">
         <div class="slide-info">
-          <div class="candidatos">
+          <div class="candidato">
           <h1>{{candidato.nombre}}</h1>
           <h1>{{candidato.apellido}}</h1>
           <div class="description">
@@ -62,7 +62,7 @@ export class NuestroPartidoComponent {
   }
 
   ngOnInit(): void {
-    const swiperElemConstructor = document.querySelector('swiper-container');
+    const swiperElemConstructor = document.querySelector('.swiper-candidato') as SwiperContainer;
     const swiperOptions: SwiperOptions = {
       navigation: {
         enabled: true,

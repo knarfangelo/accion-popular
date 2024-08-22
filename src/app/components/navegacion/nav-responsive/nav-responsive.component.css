@@ -1,0 +1,31 @@
+nav{
+    width: 90%;
+    margin: auto;
+    margin-top: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img{
+    height: 60px;
+}
+
+ a{
+    background: #E31F27;
+    color: #fff;
+    justify-content: center;
+    width: 75px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    border-radius:15px;
+    text-decoration: none;
+  }
+
+@media (width > 800px) {
+    nav{
+        display: none;
+    }
+    
+}

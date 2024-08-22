@@ -89,3 +89,30 @@ navegacion-pagina
   align-items: center;
   border-radius:15px;
 }
+
+@media (width < 800px) {
+  .navegacion-redes{
+    width: 90%;
+    box-sizing: border-box;
+    padding: 0 5px;
+    min-width: 0;
+    border-radius: 0px 0px 20px 20px;
+  }
+
+  li{
+    margin: 0 5px;
+  }
+  .correo{
+    font-size: 12px;
+  }
+  img{
+    width: 10px;
+    height: 10px;
+  }
+  .navegacion-redes ul{
+    padding: 0;
+  }
+  .navegacion-paginas{
+    display: none;
+  }
+}

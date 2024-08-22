@@ -1,12 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { NavResponsiveComponent } from "./nav-responsive/nav-responsive.component";
 
 @Component({
   selector: 'app-navegacion',
   standalone: true,
   imports: [
     CommonModule,
-  ],
+    NavResponsiveComponent
+],
   template: `
     <nav class="navegacion-redes">
       <ul class="lista-redes">
@@ -35,15 +37,17 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
     <nav class="navegacion-paginas">
     <ul class="lista-paginas">
         <li><a href="">Inicio</a></li>
-        <li><a href="">Nosotros</a></li>
-        <li><a href="">Noticias</a></li>
-        <li><a href="">Juventudes</a></li>
-        <li><a href="">Transparencia</a></li>
-        <li><a href="">Voluntariado</a></li>
+        <li><a href="fundacion">Nosotros</a></li>
+        <li><a href="">Normativa</a></li>
+        <li><a href="">ONRP</a></li>
+        <li><a href="">Actualidad</a></li>
         <li class="unete"><a href="">Unete a nosotros</a></li>
       </ul></nav>
+      <app-nav-responsive></app-nav-responsive>
   `,
   styleUrl: './navegacion.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class NavegacionComponent { }
+export class NavegacionComponent { 
+  
+ }

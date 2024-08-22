@@ -1,0 +1,86 @@
+.fundacion-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.banner-image {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 40px;
+  border-radius: 10px;
+  aspect-ratio: 3.77;
+  object-fit: contain;
+}
+section{
+  box-sizing: border-box;
+  padding: 0 40px;
+}
+.main-title {
+  color: #e31f27;
+  margin-top: 47px;
+  text-align: center;
+  font: 900 40px Montserrat, sans-serif;
+}
+
+.introduction, .ideology-principles, .evolution-legacy {
+  color: #000;
+  text-align: justify;
+  font: 400 16px Montserrat, sans-serif;
+  margin-top: 53px;
+  width: 100%;
+  max-width: 1084px;
+}
+.evolution-legacy{
+  margin-bottom: 80px;
+}
+
+.section-title {
+  color: #e31f27;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23px;
+  margin-bottom: 20px;
+}
+
+.content-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.text-content {
+  width: 80%;
+}
+
+.founder-image {
+  width: 20%;
+  aspect-ratio: 0.51;
+  object-fit: contain;
+}
+
+@media (max-width: 991px) {
+  .main-title {
+    margin-top: 40px;
+  }
+
+  .introduction, .ideology-principles, .evolution-legacy {
+    margin-top: 40px;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .text-content, .founder-image {
+    width: 100%;
+  }
+
+  .founder-image {
+    margin-top: 33px;
+  }
+}
