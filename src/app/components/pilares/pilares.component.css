@@ -6,13 +6,17 @@ header{
   font-weight: 900;
   font-size: 40px;
   text-align: center;
-  margin: 150px 0;
+  margin: 150px 20px;
 }      
 h1{
   color: #E31F27;
   font-weight: 900;
   font-size: 80px;
+
 }
+.swiper-pagination-bullets{
+  color: red;
+ }
 h3{
   font-weight: 900;
 }
@@ -55,10 +59,17 @@ h1{
   text-align: center;
 }
 
+
 @media (max-width: 800px) {
   main{
     display: none;
   }
+  swiper-slide{
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+
   .mySwiper {
     display: block;
     width: 100%;

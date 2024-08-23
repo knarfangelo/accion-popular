@@ -77,3 +77,23 @@ main{
 .mapa-web p , .enlaces-importantes p{
   font-size: 19px;
 }
+
+@media (width < 800px) {
+  .logito{
+    display: none;
+  }
+  .redes-sociales img{
+    width: 20px;
+  }
+  main{
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .redes-sociales,.enlaces-importantes,.mapa-web{
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+}

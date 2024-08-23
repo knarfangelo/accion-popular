@@ -110,3 +110,25 @@ border-radius: 10px;
   flex-grow: 0;
 }
 
+@media (width < 800px) {
+
+    .buttons{
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+      margin-bottom: 20px;
+    }
+    .fondo-candidatos{
+      height: 800px;
+    }
+    .slide-info{
+      height: 100%;
+      flex-direction: column;
+    }
+
+    .texto, .candidato{
+      width: 90%;
+    }
+    .candidato{
+      height: auto;
+    }
+}
