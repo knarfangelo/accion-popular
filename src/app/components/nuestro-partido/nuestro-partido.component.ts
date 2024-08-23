@@ -27,7 +27,7 @@ register();
     <swiper-container init=false class="swiper-candidato">
       @for (candidato of candidatos; track $index) {
       <swiper-slide><div class="slide-custom">
-        <img class="fondo-candidatos" src="candidatos/fondo-candidatos.webp" alt="">
+        <img class="fondo-candidatos" src="fundacion/banner-fundacion.webp" alt="">
         <div class="slide-info">
           <div class="candidato">
           <h1>{{candidato.nombre}}</h1>
