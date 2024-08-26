@@ -59,7 +59,16 @@ h1{
   text-align: center;
 }
 
-
+swiper-container::part(pagination){
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+}
+swiper-container::part(bullet-active) {
+  background-color: red;
+}
 @media (max-width: 800px) {
   main{
     display: none;

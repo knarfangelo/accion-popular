@@ -19,32 +19,19 @@ h1{
 img{
   width: 100%;
 }
-
-.swiper-noticias{
-  width: 85%;
+swiper-container{
+  margin: 0 20px;
 }
-
-.swiper-pagination {
+swiper-container::part(pagination){
+  position: static;
   display: flex;
-  width: 100%;
-  gap: 5px;
   align-items: center;
   justify-content: center;
+  height: 20px;
 }
-
-.swiper-pagination-bullet{
-  background-color: rgb(255, 149, 149);
-  display: inline-block;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-}
-.swiper-pagination-active-bullet{
+swiper-container::part(bullet-active) {
   background-color: red;
-  width: 10px;
-  height: 10px;
 }
-
 
 @media (width < 800px) {
   main{
