@@ -9,10 +9,23 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   ],
   template: `
     <nav>
-      <img src="icons/burguer.svg" alt="">
-      <img src="inicio/portada.svg" alt="">
+      <button (click)="navegacion()"><img class="burguer" src="icons/burguer.svg" alt=""></button>
+      <img class="inicio" src="inicio/portada.svg" alt="">
       <a href="">Únete</a>
     </nav>
+    <main  [class.open]="nav">
+      <ul class="navegacion">
+        <li><button class="close" (click)="navegar()"><img src="icons/close.svg" alt=""></button></li>
+        <li><img class="logo" src="inicio/portada.svg" alt=""></li>
+        <li><a href="">Inicio</a></li>
+        <li><a href="fundacion">Nosotros</a></li>
+        <li><a href="">Normativa</a></li>
+        <li><a href="">ONRP</a></li>
+        <li><a href="">Actualidad</a></li>
+        <li class="unete"><a href="">Unete a nosotros</a></li>
+      </ul>
+      <div class="background"></div>
+      </main>
   `,
   styleUrl: './nav-responsive.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

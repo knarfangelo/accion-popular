@@ -35,14 +35,15 @@ import { NavResponsiveComponent } from "./nav-responsive/nav-responsive.componen
 
     </nav>
     <nav class="navegacion-paginas">
-    <ul class="lista-paginas">
+      <ul class="lista-paginas">
         <li><a href="">Inicio</a></li>
         <li><a href="fundacion">Nosotros</a></li>
         <li><a href="">Normativa</a></li>
         <li><a href="">ONRP</a></li>
         <li><a href="">Actualidad</a></li>
         <li class="unete"><a href="">Unete a nosotros</a></li>
-      </ul></nav>
+      </ul>
+    </nav>
       <app-nav-responsive></app-nav-responsive>
   `,
   styleUrl: './navegacion.component.css',

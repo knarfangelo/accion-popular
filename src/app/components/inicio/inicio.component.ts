@@ -10,8 +10,8 @@ import { NavegacionComponent } from "../navegacion/navegacion.component";
     NavegacionComponent
 ],
   template: `
+    <app-navegacion></app-navegacion>
     <header>
-      <app-navegacion></app-navegacion>
       <main>
       <img class="portada" src="inicio/portada.svg" alt="">
       <img class="foto" src="inicio/foto.png" alt="">

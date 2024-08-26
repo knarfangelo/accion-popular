@@ -89,7 +89,13 @@ navegacion-pagina
   align-items: center;
   border-radius:15px;
 }
-
+app-nav-responsive{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 100vh;
+  background-color: #fff;
+}
 @media (width < 800px) {
   .navegacion-redes{
     width: 90%;

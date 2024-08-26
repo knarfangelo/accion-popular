@@ -1,19 +1,89 @@
+
 nav{
     width: 90%;
     margin: auto;
     margin-top: 13px;
     display: flex;
     align-items: center;
+    width: 100%;
     justify-content: space-between;
+    background-color: #fff;
 }
-
-img{
+.inicio{
     height: 60px;
 }
+.burguer{
+    height: 30px;
+    width: 30px;
+}
+header{
+    position: fixed;
+}
+button{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+ul{
+    margin: 0;
+    height: 100%;
+}
+main{
+    height: 100vh;
+    width: 300px;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    transform: translateX(-100%);
+    transition: transform 1s ease; 
+  }
+  main.open {
+    transform: translateX(0);
+  }
+  main{
+    height: 100vh;
+    top: 0;
+    transform: translateX(-100%);
+    transition: transform 1s ease; 
+  }
+  main.open {
+    transform: translateX(0);
+  }
+
+.navegacion{
+    width: 300px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #fff;
+  }
+  .navegacion .lista a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: #13A14B;
+  }
+  .navegacion li{
+    display: flex;
+    margin: 20px 0;
+  }
+  .navegacion li:first-child{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    width: 100%;
+    margin-top: 0;
+  }
+  .navegacion button img{
+    width: 40px;
+    height: auto;
+  }
+  .navegacion a{
+    display: flex;
+    justify-content: start;
+  }
 
  a{
-    background: #E31F27;
-    color: #fff;
+    color: #000;
     justify-content: center;
     width: 75px;
     height: 33px;
@@ -21,6 +91,21 @@ img{
     align-items: center;
     border-radius:15px;
     text-decoration: none;
+  }
+
+  .unete a{
+        background: #E31F27;
+        color: #fff;
+        justify-content: center;
+        width:70%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        border-radius:15px;
+  }
+
+  .logo{
+    width: 100%;
   }
 
 @media (width > 800px) {
