@@ -15,7 +15,7 @@ import { NavegacionComponent } from "../../navegacion/navegacion.component";
     <app-navegacion></app-navegacion>
     <article class="fundacion-article">
   <header>
-    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e1c620948dcf7cc7b3fa1362b76feea67dd2d9c2f63d9d9bfe84c99b8ee63f53?placeholderIfAbsent=true&apiKey=300be4882adc46d38b84c094090c0f8c" alt="Fundación Acción Popular banner" class="banner-image">
+    <img src="/banners/banner.webp" alt="Fundación Acción Popular banner" class="banner-image">
     <h1 class="main-title">Fundación</h1>
   </header>
 
@@ -47,7 +47,7 @@ import { NavegacionComponent } from "../../navegacion/navegacion.component";
           <li>Protección del Medio Ambiente y Recursos Naturales: Fernando Belaúnde, con su formación de arquitecto, también impulsó una visión de desarrollo que consideraba la importancia de preservar los recursos naturales del Perú.</li>
         </ol>
       </div>
-      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0a2b8c77b2d391a44100b1600ba0c7f8994c2c9d8d4efdfce0d058d8418a28cb?placeholderIfAbsent=true&apiKey=300be4882adc46d38b84c094090c0f8c" alt="Fernando Belaúnde Terry, fundador de Acción Popular" class="founder-image">
+      <img src="/candidatos/belaunde.webp" alt="Fernando Belaúnde Terry, fundador de Acción Popular" class="founder-image">
     </div>
   </section>
 

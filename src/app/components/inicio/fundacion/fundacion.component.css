@@ -60,7 +60,7 @@ section{
 .founder-image {
   width: 20%;
   aspect-ratio: 0.51;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 @media (max-width: 991px) {
@@ -72,15 +72,23 @@ section{
     margin-top: 40px;
   }
 
-  .content-wrapper {
-    flex-direction: column;
-  }
 
   .text-content, .founder-image {
     width: 100%;
   }
+  .founder-image{
+    width: 20%;
+  }
 
   .founder-image {
     margin-top: 33px;
+  }
+}
+@media (max-width: 767px) {
+  .content-wrapper{
+    flex-direction: column;
+  }
+  .founder-image{
+    width: 250px;
   }
 }
