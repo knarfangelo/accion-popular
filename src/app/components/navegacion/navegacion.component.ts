@@ -32,13 +32,12 @@ import { NavResponsiveComponent } from "./nav-responsive/nav-responsive.componen
           <p>info&#64;accionpopular.com.pe</p>
         </a></li>
       </ul>
-
     </nav>
     <nav class="navegacion-paginas">
       <ul class="lista-paginas">
         <li><a href="">Inicio</a></li>
         <li><a href="fundacion">Nosotros</a></li>
-        <li><a href="">Normativa</a></li>
+        <li><a href="normativa">Normativa</a></li>
         <li><a href="">ONRP</a></li>
         <li><a href="">Actualidad</a></li>
         <li class="unete"><a href="unete-a-nosotros">Unete a nosotros</a></li>
