@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, input } from '@angular/core';
 import { NavResponsiveComponent } from "./nav-responsive/nav-responsive.component";
+import { INavegacion } from './DB/INavegacion';
+import { navegacionJSON } from './DB/navegacionJSON';
 
 @Component({
   selector: 'app-navegacion',
@@ -35,11 +37,12 @@ import { NavResponsiveComponent } from "./nav-responsive/nav-responsive.componen
     </nav>
     <nav class="navegacion-paginas">
       <ul class="lista-paginas">
+        <ng-content></ng-content>
         <li><a href="">Inicio</a></li>
         <li><a href="fundacion">Nosotros</a></li>
         <li><a href="normativa">Normativa</a></li>
         <li><a href="">ONRP</a></li>
-        <li><a href="">Actualidad</a></li>
+        <li><a href="actualidad">Actualidad</a></li>
         <li class="unete"><a href="unete-a-nosotros">Unete a nosotros</a></li>
       </ul>
     </nav>
@@ -49,5 +52,5 @@ import { NavResponsiveComponent } from "./nav-responsive/nav-responsive.componen
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NavegacionComponent { 
-  
+  @Input() campos:INavegacion[] = navegacionJSON;
  }

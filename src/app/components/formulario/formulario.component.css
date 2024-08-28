@@ -133,6 +133,22 @@ label .map{
   margin: 0 auto;
 }
 
+.icon-portada{
+  width: 200px;
+  height: auto;
+}
+.lista{display: flex;}
+
+app-navegacion ul{
+  border: 1px solid red;
+}
+.icon-a{
+  display: flex;
+  width: 200px;
+  margin-right: 15px;
+  height: 100%;
+}
+
 @media (width < 800px) {
   form{
     margin: 10px;

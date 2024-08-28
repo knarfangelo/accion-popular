@@ -5,8 +5,8 @@ export const archivosJSON:IArchivos[]= [
     {
         id: 0,
         titulo: "ESTATUTO DEL PARTIDO POLÍTICO ACCIÓN POPULAR ",
-        linkDescargar: "",
-        linkVisualizar: ""
+        linkDescargar: "/intranet/estatuto.pdf",
+        linkVisualizar: "/intranet/estatuto.pdf"
     },
     {
         id: 1,

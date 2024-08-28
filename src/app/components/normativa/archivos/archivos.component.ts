@@ -14,8 +14,8 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
       <p>{{titulo}}</p>
       </section>
       <section class="botones">
-        <button>DESCARGAR</button>
-        <button>VISUALIZAR</button>
+        <a [href]="linkDescargar" download >DESCARGAR</a>
+        <a [href]="linkDescargar" target="_blank">VISUALIZAR</a>
       </section>
     </header>
   `,
@@ -25,6 +25,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 export class ArchivosComponent { 
 
    @Input() titulo = '';
+   @Input() linkDescargar = '';
 
 }
 

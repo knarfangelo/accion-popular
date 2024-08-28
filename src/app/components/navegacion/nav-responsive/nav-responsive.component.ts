@@ -19,9 +19,9 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
         <li><img class="logo" src="inicio/portada.svg" alt=""></li>
         <li><a href="">Inicio</a></li>
         <li><a href="fundacion">Nosotros</a></li>
-        <li><a href="">Normativa</a></li>
+        <li><a href="normativa">Normativa</a></li>
         <li><a href="">ONRP</a></li>
-        <li><a href="">Actualidad</a></li>
+        <li><a href="actualidad">Actualidad</a></li>
         <li class="unete"><a href="unete-a-nosotros">Unete a nosotros</a></li>
       </ul>
       <div class="background"></div>

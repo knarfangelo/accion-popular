@@ -14,7 +14,9 @@ import { FooterComponent } from "../footer/footer.component";
   template: `
 
   <header>
-    <app-navegacion></app-navegacion>
+    <app-navegacion>
+    <li class="lista"><a class="icon-a" href=""><img class="icon-portada" src="/inicio/portada.svg" alt=""></a></li>
+    </app-navegacion>
     <form class="formulario" action="">
       <h1>Bienvenido</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nam officia consequatur exercitationem. Illum sequi omnis vitae officia cupiditate exercitationem</p>

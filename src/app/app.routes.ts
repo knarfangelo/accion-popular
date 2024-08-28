@@ -3,10 +3,12 @@ import { AccionPopularComponent } from './components/accion-popular/accion-popul
 import { FundacionComponent } from './components/inicio/fundacion/fundacion.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import { NormativaComponent } from './components/normativa/normativa.component';
+import { ActualidadComponent } from './components/actualidad/actualidad.component';
 
 export const routes: Routes = [
     {path: '', component: AccionPopularComponent},
     {path: 'fundacion', component: FundacionComponent},
     {path: 'unete-a-nosotros', component: FormularioComponent},
-    {path: 'normativa', component:NormativaComponent}
+    {path: 'normativa', component:NormativaComponent},
+    {path: 'actualidad', component: ActualidadComponent}
 ];

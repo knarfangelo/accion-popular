@@ -4,7 +4,7 @@ import { NavegacionComponent } from "../navegacion/navegacion.component";
 import { FooterComponent } from "../footer/footer.component";
 import { ArchivosComponent } from "./archivos/archivos.component";
 import { IArchivos } from './archivos/DB/IArchivos';
-import { archivosJSON } from './archivos/DB/ArchivosJSON';
+import { archivosJSON } from './archivos/DB/archivosJSON';
 
 @Component({
   selector: 'app-normativa',
@@ -17,11 +17,12 @@ import { archivosJSON } from './archivos/DB/ArchivosJSON';
 ],
   template: `
     <header>
-      <app-navegacion></app-navegacion>
+      <app-navegacion>
+      </app-navegacion>
       <main>
       <img src="/banners/banner2.webp" alt="">
       <h1>ESTATUTO</h1>
-      <app-archivos class="archivo" [titulo]="item[0].titulo"></app-archivos>
+      <app-archivos class="archivo" [linkDescargar]="item[0].linkDescargar" [titulo]="item[0].titulo"></app-archivos>
       <h1>REGLAMENTO</h1>
       <section class="archivos">
       @for (item of items; track $index) {
