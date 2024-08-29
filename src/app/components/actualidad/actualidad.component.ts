@@ -32,6 +32,14 @@ register()
       </section>
     <swiper-container init="false" class="mySwiper swiper-actualidad" pagination="true">
     @for (noticia of newsItems; track $index) {
+    <swiper-slide>
+      <article class="articulos">
+        <img [src]="noticia.imageUrl" alt="">
+        <p>{{noticia.date}}</p>
+        <h3>{{noticia.title}}</h3>
+        <p>{{noticia.description}}</p>
+      </article>
+    </swiper-slide>
     }
   </swiper-container>
       <app-footer></app-footer>
