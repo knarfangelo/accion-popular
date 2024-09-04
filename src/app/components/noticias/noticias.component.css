@@ -32,6 +32,27 @@ swiper-container::part(pagination){
 swiper-container::part(bullet-active) {
   background-color: red;
 }
+/* Para el título del artículo */
+article h3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limitar a 2 líneas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Para la descripción del artículo */
+article p {
+  display: -webkit-box;
+  -webkit-line-clamp: 6; /* Limitar a 6 líneas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
 
 @media (width < 800px) {
   main{

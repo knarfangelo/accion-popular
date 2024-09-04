@@ -41,7 +41,7 @@ import { navegacionJSON } from './DB/navegacionJSON';
         <li><a href="">Inicio</a></li>
         <li><a href="fundacion">Nosotros</a></li>
         <li><a href="normativa">Normativa</a></li>
-        <li><a href="">ONRP</a></li>
+        <li><a href="juventudes">Juventudes</a></li>
         <li><a href="actualidad">Actualidad</a></li>
         <li class="unete"><a href="unete-a-nosotros">Unete a nosotros</a></li>
       </ul>

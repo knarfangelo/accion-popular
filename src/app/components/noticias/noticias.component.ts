@@ -19,22 +19,25 @@ register()
   <main>
     @for (item of items; track $index) {
     <article>
+      <a [href]="item.url" target="_blank">
       <img [src]="item.img" alt="">
       <p>{{item.date}}</p>
       <h3>{{item.title}}</h3>
       <p>{{item.description}}</p>
+      </a>
     </article>
     }
   </main>
   <swiper-container init="false" class="mySwiper swiper-noticias" pagination="true">
-    @for (noticia of items; track $index) {
+    @for (noticia of items; track $index) { 
+     
     <swiper-slide>
-      <article>
-        <img [src]="noticia.img" alt="">
+       <a [href]="noticia.url" target="_blank"><article>
+       <img [src]="noticia.img" alt="">
         <p>{{noticia.date}}</p>
         <h3>{{noticia.title}}</h3>
         <p>{{noticia.description}}</p>
-      </article>
+      </article></a>
     </swiper-slide>}
   </swiper-container>    
 </header>

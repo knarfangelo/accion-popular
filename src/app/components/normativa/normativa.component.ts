@@ -26,7 +26,7 @@ import { archivosJSON } from './archivos/DB/archivosJSON';
       <h1>REGLAMENTO</h1>
       <section class="archivos">
       @for (item of items; track $index) {
-      <app-archivos class="archivos-int" [titulo]="item.titulo"></app-archivos>
+      <app-archivos class="archivos-int" [linkDescargar]="item.linkDescargar" [titulo]="item.titulo"></app-archivos>
       }</section>
       </main>
       <app-footer></app-footer>

@@ -73,6 +73,22 @@ swiper-container::part(bullet-active) {
   font-weight: 400;
   margin-top: 17px;
 }
+article h3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limitar a 2 líneas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Para la descripción del artículo */
+article p {
+  display: -webkit-box;
+  -webkit-line-clamp: 6; /* Limitar a 6 líneas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 @media (max-width: 1200px) {
   .section-title {
     max-width: 100%;

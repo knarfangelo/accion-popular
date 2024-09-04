@@ -5,6 +5,7 @@ import { FormularioComponent } from './components/formulario/formulario.componen
 import { NormativaComponent } from './components/normativa/normativa.component';
 import { ActualidadComponent } from './components/actualidad/actualidad.component';
 import { Error404Component } from './components/error404/error404.component';
+import { ArticulosComponent } from './components/actualidad/articulos/articulos.component';
 
 export const routes: Routes = [
     {path: '', component: AccionPopularComponent},
@@ -12,5 +13,6 @@ export const routes: Routes = [
     {path: 'unete-a-nosotros', component: FormularioComponent},
     {path: 'normativa', component:NormativaComponent},
     {path: 'actualidad', component: ActualidadComponent},
+    {path: 'articulos/:id', component: ArticulosComponent},
     {path: '**', component: Error404Component}
 ];
