@@ -28,11 +28,11 @@ export const noticiasJSON:INoticias[] = [
     },
     {
         id: 3,
-        img: "/noticia/noticia.jfif",
+        img: "/noticia/img4.jpg",
         date: "30.07.2024",
-        title: "Lorem ipsum dolor sit amet consectetur.",
-        description: "Lorem ipsum dolor sit amet consectetur. Sollicitudin sit cras nisl dictum aliquam aliquam ornare. Fermentum morbi in libero rutrum tempor tempus bibendum.",
-        url: ""
+        title: "Jefa del Estado coordinó trabajo con Acción Popular en favor de la población.",
+        description: "Reunión se dio en Palacio de Gobierno con líderes del partido.",
+        url: "https://www.elperuano.pe/noticia/250443-jefa-del-estado-coordino-trabajo-con-accion-popular-en-favor-de-la-poblacion"
     },
 ]
 
