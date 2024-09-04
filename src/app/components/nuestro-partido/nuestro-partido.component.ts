@@ -36,7 +36,7 @@ register();
           <p>{{candidato.descripcion}}</p>
           <p>{{candidato.descripcion2}}</p></div>
           <button class="slide-button">Leer Biografía</button></div>
-          <div class="texto"><p>“Lorem ipsum dolor sit amet sit”</p><img class="foto" [src]="candidato.foto" alt=""></div>
+          <div class="texto"><p>“Volver a Belaunde”</p><img class="foto" [src]="candidato.foto" alt=""></div>
             
         </div>
       </div>
