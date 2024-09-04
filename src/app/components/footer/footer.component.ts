@@ -10,7 +10,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   template: `
     <footer>
       <div class="logito">
-      <a class="logo" href=""><img src="inicio/portada.svg" alt=""></a></div>
+      <a class="logo" href=""><img src="icons/accion-popular-black.svg" alt=""></a></div>
       <main>
       <div class="redes-sociales">
         <p>Siguenos:</p>
@@ -47,4 +47,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrl: './footer.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class FooterComponent { }
+export class FooterComponent {
+
+}

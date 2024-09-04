@@ -23,17 +23,16 @@ main{
 }
 .mapa-web, .enlaces-importantes, .redes-sociales{
   box-sizing: border-box;
-  padding: 50px;
+  padding: 0px 45px;
   color: #fff;
 }
 .logito{
   width: 30%;
-  min-height: 400px;
+  min-height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   height: auto;
-  background-color: #fff;
 }
 .logo{
   color: #fff;
@@ -44,9 +43,6 @@ main{
   width: 100%;
   object-fit: contain;
   
-}
-.logo{
-  background-color: #fff;
 }
 
 

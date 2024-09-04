@@ -118,24 +118,35 @@ border-radius: 10px;
     }
     .fondo-candidatos{
       height: 800px;
+      position: absolute;
+      z-index: -1;
     }
     .candidato h1{
-      font-size: 3  5px;
+      font-size: 35px;
     }
     .slide-info{
       height: 100%;
+      position: static;
       flex-direction: column;
+      padding: 30px 0;
     }
     .texto{
       position: static;
-
       height: auto;
-      margin: 40px 0;
-      margin-top: 10px;
-
+      display: block;
+    }
+    .texto p{
+      text-align: center;
+      width: 100%;
+      margin: 45px 0;
+    }
+    .fondo-candidatos{
+      height: 100%;
     }
     .foto{
       position: static;
+      width: 100%;
+      object-position: bottom center;
     }
     .texto, .candidato{
       width: 90%;
