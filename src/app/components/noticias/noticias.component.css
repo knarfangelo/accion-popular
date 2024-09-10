@@ -8,12 +8,12 @@ main{
   grid-template-columns: minmax(0, 400px) minmax(0, 400px) minmax(0, 400px) minmax(0, 400px);
 }
 header{
-  padding-bottom: 150px;
+  padding-bottom: 100px;
   background: linear-gradient(180deg, #FFFFFF 0%, #E3E3E3 90%);
 }
 h1{
   text-align: center;
-  padding: 100px 0;
+  padding: 60px 0;
   font-weight: 900;
 }
 img{
