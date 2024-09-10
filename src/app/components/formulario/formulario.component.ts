@@ -41,56 +41,57 @@ import { HttpClient } from '@angular/common/http';
       <div class="container">
       <h3>Lugar de nacimiento </h3><div class="linea"></div></div>
 
-      <label for="departamento"><span>Departamento</span>
-        <select id="departamento" class="direccion" (change)="onDepartamentoChange($event)">
-          <option value="">Selecciona departamento</option>
-          <option *ngFor="let dep of departamentos" [value]="dep">{{dep}}</option>
-        </select>
-        <img class="map" src="icons/map.svg" alt="">
-      </label>
+      <label for="departamentoNacimiento"><span>Departamento</span>
+    <select id="departamentoNacimiento" class="direccion" (change)="onDepartamentoNacimientoChange($event)">
+      <option value="">Selecciona departamento</option>
+      <option *ngFor="let dep of departamentosNacimiento" [value]="dep">{{dep}}</option>
+    </select>
+    <img class="map" src="icons/map.svg" alt="">
+  </label>
 
-      <label for="provincia"><span>Provincia</span>
-        <select id="provincia" class="direccion" (change)="onProvinciaChange($event)">
-          <option value="">Selecciona provincia</option>
-          <option *ngFor="let prov of provincias" [value]="prov"  >{{prov}}</option>
-        </select>
-        <img class="map" src="icons/map.svg" alt="">
-      </label>
+  <label for="provinciaNacimiento"><span>Provincia</span>
+    <select id="provinciaNacimiento" class="direccion" (change)="onProvinciaNacimientoChange($event)">
+      <option value="">Selecciona provincia</option>
+      <option *ngFor="let prov of provinciasNacimiento" [value]="prov">{{prov}}</option>
+    </select>
+    <img class="map" src="icons/map.svg" alt="">
+  </label>
 
-      <label for="distrito"><span>Distrito</span>
-        <select id="distrito" class="direccion">
-          <option value="">Selecciona distrito</option>
-          <option *ngFor="let dist of distritos" [value]="dist">{{dist}}</option>
-        </select>
-        <img class="map" src="icons/map.svg" alt="">
-      </label>
+  <label for="distritoNacimiento"><span>Distrito</span>
+    <select id="distritoNacimiento" class="direccion">
+      <option value="">Selecciona distrito</option>
+      <option *ngFor="let dist of distritosNacimiento" [value]="dist">{{dist}}</option>
+    </select>
+    <img class="map" src="icons/map.svg" alt="">
+  </label>
 
-      <div class="container">
-      <h3>Dominicilio actual  </h3><div class="linea"></div></div>
-      <label for="departamento"><span>Departamento</span>
-        <select id="departamento" class="direccion" (change)="onDepartamentoChange($event)">
-          <option value="">Selecciona departamento</option>
-          <option *ngFor="let dep of departamentos" [value]="dep">{{dep}}</option>
-        </select>
-        <img class="map" src="icons/map.svg" alt="">
-      </label>
+  <div class="container">
+    <h3>Domicilio actual  </h3><div class="linea"></div>
+  </div>
 
-      <label for="provincia"><span>Provincia</span>
-        <select id="provincia" class="direccion" (change)="onProvinciaChange($event)">
-          <option value="">Selecciona provincia</option>
-          <option *ngFor="let prov of provincias" [value]="prov"  >{{prov}}</option>
-        </select>
-        <img class="map" src="icons/map.svg" alt="">
-      </label>
+  <label for="departamentoDomicilio"><span>Departamento</span>
+    <select id="departamentoDomicilio" class="direccion" (change)="onDepartamentoDomicilioChange($event)">
+      <option value="">Selecciona departamento</option>
+      <option *ngFor="let dep of departamentosDomicilio" [value]="dep">{{dep}}</option>
+    </select>
+    <img class="map" src="icons/map.svg" alt="">
+  </label>
 
-      <label for="distrito"><span>Distrito</span>
-        <select id="distrito" class="direccion">
-          <option value="">Selecciona distrito</option>
-          <option *ngFor="let dist of distritos" [value]="dist">{{dist}}</option>
-        </select>
-        <img class="map" src="icons/map.svg" alt="">
-      </label>
+  <label for="provinciaDomicilio"><span>Provincia</span>
+    <select id="provinciaDomicilio" class="direccion" (change)="onProvinciaDomicilioChange($event)">
+      <option value="">Selecciona provincia</option>
+      <option *ngFor="let prov of provinciasDomicilio" [value]="prov">{{prov}}</option>
+    </select>
+    <img class="map" src="icons/map.svg" alt="">
+  </label>
 
+  <label for="distritoDomicilio"><span>Distrito</span>
+    <select id="distritoDomicilio" class="direccion">
+      <option value="">Selecciona distrito</option>
+      <option *ngFor="let dist of distritosDomicilio" [value]="dist">{{dist}}</option>
+    </select>
+    <img class="map" src="icons/map.svg" alt="">
+  </label>
       <label class="checkbox" for=""><input type="checkbox">
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque labore ab temporibus earum architecto quis accusantium similique facilis</p>
       </label>
@@ -104,14 +105,25 @@ import { HttpClient } from '@angular/common/http';
 })
 export class FormularioComponent {
 
-  
   provincias: any[] = [];
   departamentos: any[] = [];
   distritos: any[] = [];
   provinciasOriginales: any[] = [];
   departamentosOriginales: any[] = [];
-  selectedDepartamento: string = '';
-  selectedProvincia: string = '';
+  
+  // Variables para lugar de nacimiento
+  departamentosNacimiento: any[] = [];
+  provinciasNacimiento: any[] = [];
+  distritosNacimiento: any[] = [];
+  selectedDepartamentoNacimiento: string = '';
+  selectedProvinciaNacimiento: string = '';
+
+  // Variables para domicilio actual
+  departamentosDomicilio: any[] = [];
+  provinciasDomicilio: any[] = [];
+  distritosDomicilio: any[] = [];
+  selectedDepartamentoDomicilio: string = '';
+  selectedProvinciaDomicilio: string = '';
 
   constructor(private http: HttpClient) {}
 
@@ -135,40 +147,56 @@ export class FormularioComponent {
   }
 
   updateDepartamentos() {
-    this.departamentos = [...new Set(this.provinciasOriginales.map(p => p.Departamento))];
-    console.log('Departamentos:', this.departamentos);
+    // Actualiza departamentos para lugar de nacimiento y domicilio actual
+    this.departamentosNacimiento = [...new Set(this.provinciasOriginales.map(p => p.Departamento))];
+    this.departamentosDomicilio = [...new Set(this.provinciasOriginales.map(p => p.Departamento))];
   }
 
-  onDepartamentoChange(event: Event): void {
+  onDepartamentoNacimientoChange(event: Event): void {
     const target = event.target as HTMLSelectElement;
-    this.selectedDepartamento = target.value;
+    this.selectedDepartamentoNacimiento = target.value;
 
-    // Filtrar provincias según el departamento seleccionado
     const provinciasFiltradas = this.provinciasOriginales
-      .filter(p => p.Departamento === this.selectedDepartamento)
+      .filter(p => p.Departamento === this.selectedDepartamentoNacimiento)
       .map(p => p.Provincia);
       
-    // Eliminar duplicados
-    this.provincias = [...new Set(provinciasFiltradas)];
-    console.log('Provincias:', this.provincias);
-    
-    // Limpiar selección de provincia y distrito
-    this.selectedProvincia = '';
-    this.distritos = [];
+    this.provinciasNacimiento = [...new Set(provinciasFiltradas)];
+    this.selectedProvinciaNacimiento = '';
+    this.distritosNacimiento = [];
   }
 
-  onProvinciaChange(event: Event): void {
+  onProvinciaNacimientoChange(event: Event): void {
     const target = event.target as HTMLSelectElement;
-    this.selectedProvincia = target.value;
+    this.selectedProvinciaNacimiento = target.value;
 
-    // Filtrar distritos según la provincia seleccionada
     const distritosFiltrados = this.provinciasOriginales
-      .filter(p => p.Provincia === this.selectedProvincia)
+      .filter(p => p.Provincia === this.selectedProvinciaNacimiento)
       .map(p => p.Distrito);
     
-    // Eliminar duplicados
-    this.distritos = [...new Set(distritosFiltrados)];
-    console.log('Distritos:', this.distritos);
+    this.distritosNacimiento = [...new Set(distritosFiltrados)];
   }
 
+  onDepartamentoDomicilioChange(event: Event): void {
+    const target = event.target as HTMLSelectElement;
+    this.selectedDepartamentoDomicilio = target.value;
+
+    const provinciasFiltradas = this.provinciasOriginales
+      .filter(p => p.Departamento === this.selectedDepartamentoDomicilio)
+      .map(p => p.Provincia);
+      
+    this.provinciasDomicilio = [...new Set(provinciasFiltradas)];
+    this.selectedProvinciaDomicilio = '';
+    this.distritosDomicilio = [];
+  }
+
+  onProvinciaDomicilioChange(event: Event): void {
+    const target = event.target as HTMLSelectElement;
+    this.selectedProvinciaDomicilio = target.value;
+
+    const distritosFiltrados = this.provinciasOriginales
+      .filter(p => p.Provincia === this.selectedProvinciaDomicilio)
+      .map(p => p.Distrito);
+    
+    this.distritosDomicilio = [...new Set(distritosFiltrados)];
+  }
 }
