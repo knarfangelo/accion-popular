@@ -12,10 +12,8 @@ import { NavegacionComponent } from "../navegacion/navegacion.component";
   template: `
     <app-navegacion></app-navegacion>
     <header>
-      <main>
       <img class="portada" src="inicio/portada.svg" alt="">
-      <img class="foto" src="inicio/foto.png" alt="">
-      </main>
+      <img class="foto" src="inicio/portada.jpg" alt="">
     </header>
   `,
   styleUrl: './inicio.component.css',
