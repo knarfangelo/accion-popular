@@ -93,7 +93,7 @@ import { HttpClient } from '@angular/common/http';
     <img class="map" src="icons/map.svg" alt="">
   </label>
       <label class="checkbox" for=""><input type="checkbox">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque labore ab temporibus earum architecto quis accusantium similique facilis</p>
+        <p>Al continuar, confirmo que he leído y acepto los Términos y Condiciones</p>
       </label>
       <input class="submit" type="submit" value="Enviar">
     </form>
