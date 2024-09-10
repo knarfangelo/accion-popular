@@ -105,7 +105,11 @@ border-radius: 10px;
   flex: none;
   flex-grow: 0;
 }
-
+@media (width < 1200px) {
+    .candidato h1{
+      font-size: 40px;
+    }
+}
 @media (width < 800px) {
 
     .buttons{
