@@ -23,6 +23,22 @@ input{
   padding-right: 20px;
   border-radius: 10px;
 }
+select{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  align-items: center;
+  justify-content: center;
+}
+select{
+  border: 2px solid #000;
+  border-radius: 10px;
+  height: 100%;
+  margin-top:auto;
+  padding-left: 0px;
+  padding-right: 0px;
+}
 span{
   background: #fff;
   padding:0 5px;
@@ -30,6 +46,7 @@ span{
   top: -10px;
   position: absolute;
   font-weight: bold;
+  z-index: 5;
 }
 span::after{
   content: ' * ';

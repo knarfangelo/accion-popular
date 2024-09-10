@@ -35,11 +35,10 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
       <div class="enlaces-importantes">
         <p>Enlaces Importantes</p>
         <ul>
-          <li><a href="">Enlace 1</a></li>
-          <li><a href="">Enlace 2</a></li>
-          <li><a href="">Enlace 3</a></li>
-          <li><a href="">Enlace 4</a></li>
-          <li><a href="">Enlace 5</a></li>
+          <li><a href="">Jurado Nacional de Elecciones</a></li>
+          <li><a href="">ONPE</a></li>
+          <li><a href="">Presidencia</a></li>
+          <li><a href="https://www.congreso.gob.pe/">Congreso de la republica</a></li>
         </ul>
       </div></main>
     </footer>

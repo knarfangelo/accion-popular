@@ -32,9 +32,13 @@ section{
   color: #000;
   text-align: justify;
   font: 400 16px Montserrat, sans-serif;
-  margin-top: 53px;
+  font-weight: bold;
+  margin-top: 0;
   width: 100%;
   max-width: 1084px;
+}
+.introduction{
+  margin-top: 0;
 }
 .evolution-legacy{
   margin-bottom: 80px;
