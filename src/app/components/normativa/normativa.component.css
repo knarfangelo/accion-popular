@@ -48,9 +48,6 @@ h1{
   grid-template-columns: repeat(auto-fill, 400px);
   margin-bottom: 100px;
 }
-.archivos-int:last-child{
-  grid-column: 2 / 3;
-}
 
 .archivos-int{
   width: auto;
