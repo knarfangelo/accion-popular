@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { NavegacionComponent } from "../navegacion/navegacion.component";
 import { FooterComponent } from "../footer/footer.component";
+import { archivosJSON } from '../normativa/archivos/DB/archivosJSON';
 
 @Component({
   selector: 'app-juventudes',
@@ -15,10 +16,15 @@ import { FooterComponent } from "../footer/footer.component";
    <app-navegacion>
     <li class="lista"><a class="icon-a" href=""><img class="icon-portada" src="/inicio/portada.svg" alt=""></a></li>
     </app-navegacion>
-    
+    <main>
+      <img src="" alt="">
+    </main>
     <app-footer></app-footer>
   `,
   styleUrl: './juventudes.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class JuventudesComponent { }
+export class JuventudesComponent {
+
+
+}

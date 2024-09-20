@@ -6,12 +6,14 @@ import { NormativaComponent } from './components/normativa/normativa.component';
 import { ActualidadComponent } from './components/actualidad/actualidad.component';
 import { Error404Component } from './components/error404/error404.component';
 import { ArticulosComponent } from './components/actualidad/articulos/articulos.component';
+import { JuventudesComponent } from './components/juventudes/juventudes.component';
 
 export const routes: Routes = [
     {path: '', component: AccionPopularComponent},
     {path: 'fundacion', component: FundacionComponent},
     {path: 'unete-a-nosotros', component: FormularioComponent},
     {path: 'normativa', component:NormativaComponent},
+    {path: 'juventudes', component:JuventudesComponent},
     {path: 'actualidad', component: ActualidadComponent},
     {path: 'articulos/:id', component: ArticulosComponent},
     {path: '**', component: Error404Component}
