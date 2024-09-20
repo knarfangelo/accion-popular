@@ -7,6 +7,7 @@ import { ActualidadComponent } from './components/actualidad/actualidad.componen
 import { Error404Component } from './components/error404/error404.component';
 import { ArticulosComponent } from './components/actualidad/articulos/articulos.component';
 import { JuventudesComponent } from './components/juventudes/juventudes.component';
+import { CardsJuventudesComponent } from './layouts/cards-juventudes/cards-juventudes.component';
 
 export const routes: Routes = [
     {path: '', component: AccionPopularComponent},
@@ -16,5 +17,6 @@ export const routes: Routes = [
     {path: 'juventudes', component:JuventudesComponent},
     {path: 'actualidad', component: ActualidadComponent},
     {path: 'articulos/:id', component: ArticulosComponent},
-    {path: '**', component: Error404Component}
+    {path: 'juventudes/candidatos', component: CardsJuventudesComponent},
+    {path: '**', component: Error404Component},
 ];
