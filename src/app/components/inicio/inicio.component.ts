@@ -20,11 +20,12 @@ register();
     <app-navegacion></app-navegacion>
     <swiper-container init=false class="swiper-inicio">
       <swiper-slide>
-        <img class="foto" src="banners/panel1.png" alt="">
-      </swiper-slide>
-      <swiper-slide>
         <img class="foto" src="banners/panel2.png" alt="">
       </swiper-slide>
+      <swiper-slide>
+        <img class="foto" src="banners/panel1.png" alt="">
+      </swiper-slide>
+      
     </swiper-container>
   `,
   styleUrl: './inicio.component.css',

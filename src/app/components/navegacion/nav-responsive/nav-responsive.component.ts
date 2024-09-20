@@ -11,7 +11,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
     <nav>
       <button (click)="navegacion()"><img class="burguer" src="icons/burguer.svg" alt=""></button>
       <img class="inicio" src="inicio/portada.svg" alt="">
-      <a href="">Únete</a>
+      <a class="unete" href="unete-a-nosotros">Únete</a>
     </nav>
     <main  [class.open]="nav">
       <ul class="navegacion">

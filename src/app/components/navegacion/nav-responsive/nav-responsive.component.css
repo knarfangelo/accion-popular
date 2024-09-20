@@ -12,6 +12,12 @@ nav{
 .inicio{
     height: 60px;
 }
+.unete{
+  display: flex;
+  color: #fff;
+  font-weight: bold;
+  background-color: #E31F27;
+}
 .burguer{
     height: 30px;
     width: 30px;
