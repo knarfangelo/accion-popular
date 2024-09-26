@@ -39,9 +39,9 @@ import { navegacionJSON } from './DB/navegacionJSON';
       <ul class="lista-paginas">
         <ng-content></ng-content>
         <li><a href="">INICIO</a></li>
-        <li><a href="fundacion">NOSOTROS</a></li>
+        <li><a href="nosotros">NOSOTROS</a></li>
         <li><a href="normativa">NORMATIVA</a></li>
-        <li><a href="juventudes">JUVENTUDES</a></li>
+        <li><a href="juventud">JUVENTUDES</a></li>
         <li><a href="actualidad">ACTUALIDAD</a></li>
         <li class="unete"><a href="unete-a-nosotros">UNETE A NOSOTROS</a></li>
       </ul>

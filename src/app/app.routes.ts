@@ -8,14 +8,16 @@ import { Error404Component } from './components/error404/error404.component';
 import { ArticulosComponent } from './components/actualidad/articulos/articulos.component';
 import { JuventudesComponent } from './components/juventudes/juventudes.component';
 import { CardsJuventudesComponent } from './layouts/cards-juventudes/cards-juventudes.component';
+import { PropuestasComponent } from './components/propuestas/propuestas.component';
 
 export const routes: Routes = [
     {path: '', component: AccionPopularComponent},
-    {path: 'fundacion', component: FundacionComponent},
+    {path: 'nosotros', component: FundacionComponent},
     {path: 'unete-a-nosotros', component: FormularioComponent},
     {path: 'normativa', component:NormativaComponent},
-    {path: 'juventudes', component:JuventudesComponent},
+    {path: 'juventud', component:JuventudesComponent},
     {path: 'actualidad', component: ActualidadComponent},
+    {path: 'propuestas', component: PropuestasComponent},
     {path: 'articulos/:id', component: ArticulosComponent},
     {path: '**', component: Error404Component},
 ];
