@@ -9,6 +9,8 @@ import { ArticulosComponent } from './components/actualidad/articulos/articulos.
 import { JuventudesComponent } from './components/juventudes/juventudes.component';
 import { CardsJuventudesComponent } from './layouts/cards-juventudes/cards-juventudes.component';
 import { PropuestasComponent } from './components/propuestas/propuestas.component';
+import { JuventudesApComponent } from './components/juventudes-ap/juventudes-ap.component';
+import { CapacitacionFormacionComponent } from './components/capacitacion-formacion/capacitacion-formacion.component';
 
 export const routes: Routes = [
     {path: '', component: AccionPopularComponent},
@@ -17,6 +19,8 @@ export const routes: Routes = [
     {path: 'normativa', component:NormativaComponent},
     {path: 'juventud', component:JuventudesComponent},
     {path: 'actualidad', component: ActualidadComponent},
+    {path: 'capacitacion', component: CapacitacionFormacionComponent},
+    {path: 'juventud-accion-popular', component: JuventudesApComponent},
     {path: 'propuestas', component: PropuestasComponent},
     {path: 'articulos/:id', component: ArticulosComponent},
     {path: '**', component: Error404Component},

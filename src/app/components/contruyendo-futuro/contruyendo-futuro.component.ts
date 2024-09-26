@@ -15,7 +15,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
         <p class="explora">Explora nuestras propuestas, conoce nuestra historia y únete a nuestro proyecto de futuro.</p>
         <div class="buttons">
           <a href="unete-a-nosotros">Únete a nosotros</a>
-          <a href="">Propuestas</a>
+          <a href="propuestas">Propuestas</a>
         </div>
       </main>
     </header>
