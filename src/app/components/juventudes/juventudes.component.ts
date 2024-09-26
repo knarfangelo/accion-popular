@@ -2,7 +2,6 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { NavegacionComponent } from "../navegacion/navegacion.component";
 import { FooterComponent } from "../footer/footer.component";
-import { archivosJSON } from '../normativa/archivos/DB/archivosJSON';
 import { CardsJuventudesComponent } from "../../layouts/cards-juventudes/cards-juventudes.component";
 
 @Component({

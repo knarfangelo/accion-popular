@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { FooterComponent } from "../../footer/footer.component";
-import { NavegacionComponent } from "../../navegacion/navegacion.component";
+import { FooterComponent } from "../footer/footer.component";
+import { NavegacionComponent } from "../navegacion/navegacion.component";
 
 @Component({
   selector: 'app-fundacion',
