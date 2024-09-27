@@ -1,0 +1,66 @@
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 45px 0;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 180px;
+  max-width: 1140px;
+}
+h1{
+  color: #DE1A22;;
+  font-size: 45px;
+  font-weight: 900;
+}
+p{
+  text-align: center;
+  font-size: 16px;
+  line-height: 19.5px;
+  font-weight: 500;
+}
+
+.buttons{
+  display: flex;
+  gap: 48px;
+}
+
+a{
+  text-decoration: none;
+  background: #E31F27;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 50px;
+}
+
+@media (width < 900px) {
+  h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+  header{
+    margin: 0;
+  }
+  main{
+    margin: 20px 0;
+  }
+  .buttons{
+    gap: 30px;
+    margin: 0;
+    align-items: center;
+  }
+  .explora{
+    min-width: 250px;
+  }
+  a{
+    margin: 0;
+    white-space: nowrap;
+  }
+}

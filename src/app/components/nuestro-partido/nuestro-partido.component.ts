@@ -20,8 +20,6 @@ register();
       <button class="button-nav" (click)="updateInfo(0)">Presidente</button>
       <button class="button-nav" (click)="updateInfo(1)">Vicepresidente</button>
       <button class="button-nav" (click)="updateInfo(2)">Secretario General</button>
-      <button class="button-nav" (click)="updateInfo(3)">Dirección Central</button>
-      <button class="button-nav" (click)="updateInfo(4)">Dirección Politica</button>
     </div>
     <main>
     <swiper-container init=false class="swiper-candidato">

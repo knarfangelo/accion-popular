@@ -6,6 +6,7 @@ import { BancadaComponent } from "../bancada/bancada.component";
 import { NoticiasComponent } from "../noticias/noticias.component";
 import { NuestroPartidoComponent } from "../nuestro-partido/nuestro-partido.component";
 import { FooterComponent } from "../footer/footer.component";
+import { ContruyendoFuturoComponent } from "../contruyendo-futuro/contruyendo-futuro.component";
 
 @Component({
   selector: 'app-accion-popular',
@@ -17,11 +18,12 @@ import { FooterComponent } from "../footer/footer.component";
     BancadaComponent,
     NoticiasComponent,
     NuestroPartidoComponent,
-    FooterComponent
+    FooterComponent,
+    ContruyendoFuturoComponent
 ],
   template: `
     <app-inicio></app-inicio>
-    <app-pilares></app-pilares>
+    <app-contruyendo-futuro></app-contruyendo-futuro>
     <app-bancada></app-bancada>
     <app-noticias></app-noticias>
     <app-nuestro-partido></app-nuestro-partido>
