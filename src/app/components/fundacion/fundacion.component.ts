@@ -29,12 +29,12 @@ import { NavegacionComponent } from "../navegacion/navegacion.component";
         <div class="cartas">
           <h4>Desarrollo Sostenible</h4>
           <p>Nuestro enfoque está en el crecimiento económico equilibrado con el respeto al medio ambiente.</p>
-          <img src="nosotros/2.png" alt="democracia y participación ciudadana">
+          <img src="nosotros/3.png" alt="democracia y participación ciudadana">
         </div>
         <div class="cartas">
           <h4>Justicia Social </h4>
           <p>Promovemos la igualdad de oportunidades y la reducción de las brechas sociales.</p>
-          <img src="nosotros/3.png" alt="democracia y participación ciudadana">
+          <img src="nosotros/2.png" alt="democracia y participación ciudadana">
         </div>
       </section>
     </article>
