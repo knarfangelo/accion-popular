@@ -2,7 +2,6 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { NavegacionComponent } from "../navegacion/navegacion.component";
 import { FooterComponent } from "../footer/footer.component";
-import { archivosJSON } from '../normativa/archivos/DB/archivosJSON';
 import { CardsJuventudesComponent } from "../../layouts/cards-juventudes/cards-juventudes.component";
 
 @Component({
@@ -33,7 +32,6 @@ import { CardsJuventudesComponent } from "../../layouts/cards-juventudes/cards-j
     nombre="CHÁVEZ CHIONG, JULIO ABRAHAM"
     cargo="Presidente del partido"
     imagen="juventudes/female.svg"
-    [estilosImagen]="estilosRedondeado"
     ></app-cards-juventudes>
     <app-cards-juventudes
     nombre="CHÁVEZ CHIONG, JULIO ABRAHAM"
@@ -46,12 +44,5 @@ import { CardsJuventudesComponent } from "../../layouts/cards-juventudes/cards-j
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class JuventudesComponent {
-
-  estilosRedondeado = {
-    'border-radius': '50%',
-    'width': '150px !important',
-    'height': '150px',
-  };
-
 
 }

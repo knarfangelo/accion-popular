@@ -14,6 +14,7 @@
 main{
   display: flex;
   gap: 57px;
+  margin: 0 25px;
   justify-content: center;
 }
 
@@ -59,3 +60,17 @@ main{
   min-height: 80vh;
 }
 
+@media (width < 900px) {
+
+  main{
+    flex-direction: column;
+    margin-bottom: 120px;
+  }
+  .titulo{
+    width: 90%;
+  }
+  .titulo p{
+    font-size: 25px;
+  }
+
+}

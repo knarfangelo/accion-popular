@@ -11,12 +11,12 @@ import { CardsJuventudesComponent } from './layouts/cards-juventudes/cards-juven
 
 export const routes: Routes = [
     {path: '', component: AccionPopularComponent},
-    {path: 'fundacion', component: FundacionComponent},
+    {path: 'nosotros', component: FundacionComponent},
     {path: 'unete-a-nosotros', component: FormularioComponent},
     {path: 'normativa', component:NormativaComponent},
-    {path: 'juventudes', component:JuventudesComponent},
+    {path: 'juventud', component:JuventudesComponent},
     {path: 'actualidad', component: ActualidadComponent},
     {path: 'articulos/:id', component: ArticulosComponent},
-    {path: 'juventudes/candidatos', component: CardsJuventudesComponent},
+    {path: 'juventud/candidatos', component: CardsJuventudesComponent},
     {path: '**', component: Error404Component},
 ];

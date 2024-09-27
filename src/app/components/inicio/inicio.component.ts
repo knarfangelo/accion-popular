@@ -3,8 +3,6 @@ import { ChangeDetectionStrategy, Component, CUSTOM_ELEMENTS_SCHEMA, signal } fr
 import { NavegacionComponent } from "../navegacion/navegacion.component";
 import { register, SwiperContainer } from 'swiper/element';
 import { Swiper, SwiperOptions } from 'swiper/types';
-import { candidatosJSON } from '../nuestro-partido/DB/candidatosJSON';
-import { ICandidato } from '../nuestro-partido/DB/ICandidato';
 
 register();
 
